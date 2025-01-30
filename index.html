@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methode Crud</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class = container-fluid>
+        <div class="container">
+            <h1>Crud dans tout son integralité</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3>Student (44)</h3>
+                <button class="btn btn-primary" id="create">Create</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-responsive"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Joel</td>
+                    <td>30</td>
+                    <td>France</td>
+                    <td><button class="btn btn-success" id="edit">Edit</button></td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Create student mmodel -->
+     <!-- <div class="container"> -->
+<div class="modal" id = create-student>
+<div class="modal-body">
+    <h3>Create a student</h3>
+
+    <div class="form-group">
+     <label for=""><b>Enter your Name</b></label>
+     <input type="text" placeholder="Enter your name"  id="name" class="form-control">
+    </div>
+    <div class="form-group">
+     <label for=""><b>Enter your Name</b></label>
+     <input type="text" placeholder="Enter your age"  id="age" class="form-control">
+    </div>
+    <div class="form-group">
+     <label for=""><b>Enter your Name</b></label>
+     <input type="text" placeholder="Enter your Country" id="country" class="form-control">
+    </div>
+        <div class="form-group buttons">
+        <button class="btn btn-success"  type=" submit" id="save">Save</button>
+        <button class="btn btn-danger"  type=" submit" id="close">Close</button>
+        </div>
+
+</div>
+</div>
+     <!-- </div>  -->
+<!-- Edit student -->
+<div class="modal" id = update-student>
+    <div class="modal-body">
+        <h3>update student</h3>
+    
+        <div class="form-group">
+         <label for=""><b>Enter your Name</b></label>
+         <input type="text" placeholder="Enter your name"  id="name" class="form-control">
+        </div>
+        <div class="form-group">
+         <label for=""><b>Enter your Name</b></label>
+         <input type="text" placeholder="Enter your age"  id="age" class="form-control">
+        </div>
+        <div class="form-group">
+         <label for=""><b>Enter your Name</b></label>
+         <input type="text" placeholder="Enter your Country" id="Country" class="form-control">
+        </div>
+            <div class="form-group buttons">
+            <button class="btn btn-success"  type=" submit" id="save">Update</button>
+            <button class="btn btn-danger"  type=" submit" id="update_close">Close</button>
+            </div>
+    
+    </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
